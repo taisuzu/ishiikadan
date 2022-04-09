@@ -1,0 +1,523 @@
+//後でフォルダ分けようね
+$white:#fff;
+$planWidth:18vw;
+$cardWidth:45%;
+$cardColor:#F6F6F6;
+$aos-distance: 50px !important;
+* {
+    padding: 0;
+    margin: 0;
+    font-family: “Times New Roman”, “游明朝”, “Yu Mincho”, “游明朝体”, “YuMincho”, “ヒラギノ明朝 Pro W3”, “Hiragino Mincho Pro”, “HiraMinProN-W3”, “HGS明朝E”, “ＭＳ Ｐ明朝”, “MS PMincho”, serif;
+}
+
+//モーダル
+.body-modal {
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+    // background-color: white;
+    // z-index: 10;
+    // opacity: 0.4;
+    // visibility: hidden;
+    // .booking-modal {}
+    // //ヘッダー
+    header {
+        width: 100%;
+        color: $white;
+        background-color: black;
+        opacity: 0.7;
+        display: flex;
+        z-index: 5;
+        position: fixed;
+        .logo {
+            h1 {
+                font-size: 32px;
+                font-weight: bold;
+                padding-top: 3px;
+                cursor: pointer;
+                 :hover {
+                    color: $white;
+                }
+            }
+            img {
+                padding-right: 5px;
+            }
+            display: flex;
+            align-items: flex-start;
+            font-size: 32px;
+            justify-content: center;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        .header-menu {
+            display: flex;
+            margin-left: 5vw;
+            margin-top: 20px;
+             :hover {
+                margin-top: 2px;
+                transition: 0.3s;
+                color: #fff;
+            }
+            p {
+                margin-right: 1vw;
+                cursor: pointer;
+            }
+        }
+        .booking-btn {
+            align-items: flex-start;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: 20px;
+             :hover {
+                background-color: #afa408;
+            }
+            span {
+                background-color: #978F10;
+                //ボタン
+                position: relative;
+                display: flex;
+                border: 1px solid;
+                cursor: pointer;
+                padding: 10px 20px;
+                opacity: 0.9;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                img {
+                    padding-right: 5px;
+                }
+                p {
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
+
+main {
+    //メイン画像
+    #main-img {
+        position: relative;
+        overflow: hidden;
+        .slider {
+            width: 100vw;
+            height: 100vh;
+            margin: 0 auto;
+            img {
+                width: 100vw;
+                height: 100vh;
+                position: absolute;
+                opacity: 0.5;
+                object-fit: cover;
+            }
+            #img1 {
+                z-index: 3;
+                animation: slide 21s 0s infinite both;
+            }
+            #img2 {
+                z-index: 3;
+                animation: slide 21s 7s infinite both;
+            }
+            #img3 {
+                z-index: 1;
+                animation: slide 21s 14s infinite both;
+            }
+        }
+        .main-text {
+            h2 {
+                writing-mode: vertical-rl;
+                line-height: 80px;
+                position: absolute;
+                font-size: 34px;
+                color: $white;
+                margin-top: 30vh;
+                margin-left: 70vw;
+                z-index: 4;
+            }
+        }
+    }
+    //コメント
+    .comment-wrapper {
+        background-image: url("../tyukyu-Ex/bg.png");
+        .comment {
+            width: 70vw;
+            margin-left: auto;
+            margin-right: auto;
+            writing-mode: vertical-rl;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            h2 {
+                line-height: 60px;
+                padding-left: 60px;
+                font-size: 36px;
+            }
+            p {
+                line-height: 40px;
+                padding-right: 30px;
+                padding-left: 30px;
+                font-size: 16px;
+            }
+            h3 {
+                padding-right: 60px;
+                padding-top: 250px;
+                font-size: 16px;
+            }
+        }
+    }
+    //紹介
+    .about {
+        div {
+            margin-top: 40px;
+            margin-bottom: 40px;
+            h3 {
+                font-size: 36px;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+        img {
+            width: 55vw;
+            height: 35vw;
+            object-fit: cover;
+        }
+        .room {
+            display: flex;
+            .room-img {
+                margin-left: 0 auto;
+            }
+            .room-comment {
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                p {
+                    margin-top: 72px;
+                    margin-bottom: 42px;
+                }
+                button {
+                    font-size: 16px;
+                    position: relative;
+                    display: flex;
+                    margin-left: auto;
+                    margin-right: auto;
+                    border: 1px solid;
+                    cursor: pointer;
+                    padding: 20px 52px;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    text-align: center;
+                    background-color: #fff;
+                }
+            }
+        }
+        .meal {
+            display: flex;
+            .meat-img {
+                margin-right: auto;
+            }
+            .meal-comment {
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                p {
+                    margin-top: 72px;
+                    margin-bottom: 42px;
+                }
+                button {
+                    font-size: 16px;
+                    position: relative;
+                    display: flex;
+                    margin-left: auto;
+                    margin-right: auto;
+                    border: 1px solid;
+                    cursor: pointer;
+                    padding: 20px 52px;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    text-align: center;
+                    background-color: #fff;
+                }
+            }
+        }
+        .onsen {
+            .onsen-img {
+                margin-left: 0 auto;
+            }
+            display: flex;
+            justify-content: space-between;
+            .onsen-comment {
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                p {
+                    margin-top: 72px;
+                    margin-bottom: 42px;
+                }
+                button {
+                    font-size: 16px;
+                    position: relative;
+                    display: flex;
+                    margin-left: auto;
+                    margin-right: auto;
+                    border: 1px solid;
+                    cursor: pointer;
+                    padding: 20px 52px;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    text-align: center;
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+    //プラン
+    .plan {
+        background-image: url("../tyukyu-Ex/bg02.png");
+        text-align: center;
+        img {
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+        .plan-contents {
+            display: flex;
+            width: 90％;
+            margin-right: auto;
+            margin-left: auto;
+            justify-content: space-around;
+            margin-bottom: 10px;
+            padding-bottom: 40px;
+            h5 {
+                font-size: 20px;
+                margin-top: 15px;
+                margin-bottom: 25px;
+            }
+            p {
+                font-size: 16px;
+            }
+            .fish {
+                width: 300px;
+                img {
+                    margin-right: auto;
+                    margin-left: auto;
+                    height: 209px;
+                }
+            }
+            .club {
+                width: 300px;
+                img {
+                    margin-right: auto;
+                    margin-left: auto;
+                    height: 209px;
+                }
+            }
+            .sashimi {
+                width: 300px;
+                img {
+                    margin-right: auto;
+                    margin-left: auto;
+                    height: 209px;
+                }
+            }
+        }
+    }
+    //ニュース
+    .news {
+        text-align: center;
+        margin-top: 60px;
+        width: 1000px;
+        margin-right: auto;
+        margin-left: auto;
+        h3 {
+            font-size: 36px;
+            margin-top: 20px;
+        }
+        p {
+            font-size: 16px;
+            display: inline-block;
+            margin-top: 20px;
+            margin-right: 30px;
+            margin-left: 20px;
+        }
+        .news-tag {
+            display: flex;
+            flex-wrap: wrap;
+            text-align: left;
+            p {
+                margin-top: 0;
+            }
+            h6 {
+                font-size: 14px;
+                text-align: left;
+                margin-left: 20px;
+            }
+            img {
+                width: 80px;
+                height: 80px;
+                vertical-align: middle;
+            }
+            .news1 {
+                width: $cardWidth;
+                position: relative;
+                display: flex;
+                background-color: $cardColor;
+                padding: 10px 20px;
+                margin: 10px auto 10px auto;
+            }
+            .news2 {
+                width: $cardWidth;
+                position: relative;
+                display: flex;
+                background-color: $cardColor;
+                padding: 10px 20px;
+                margin: 10px auto 10px auto;
+            }
+            .news2 {
+                width: $cardWidth;
+                position: relative;
+                display: flex;
+                background-color: $cardColor;
+                padding: 10px 20px;
+                margin: 10px auto 10px auto;
+            }
+            .news3 {
+                width: $cardWidth;
+                position: relative;
+                display: flex;
+                background-color: $cardColor;
+                padding: 10px 20px;
+                margin: 10px auto 10px auto;
+            }
+            .news4 {
+                width: $cardWidth;
+                position: relative;
+                display: flex;
+                background-color: $cardColor;
+                padding: 10px 20px;
+                margin: 10px auto 10px auto;
+            }
+            .news5 {
+                width: $cardWidth;
+                position: relative;
+                display: flex;
+                background-color: $cardColor;
+                padding: 10px 20px;
+                margin: 10px auto 10px auto;
+            }
+            .news6 {
+                width: $cardWidth;
+                position: relative;
+                display: flex;
+                background-color: $cardColor;
+                padding: 10px 20px;
+                margin: 10px auto 10px auto;
+            }
+        }
+    }
+    //アクセス
+    .access {
+        background-image: url("../tyukyu-Ex/bg.png");
+        text-align: center;
+        margin-top: 60px;
+        margin-right: auto;
+        margin-left: auto;
+        img {
+            padding-top: 60px;
+        }
+        h3 {
+            font-size: 36px;
+        }
+        .access-info {
+            margin-top: 60px;
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            .access-info-pic {
+                margin-right: 40px;
+                margin-left: auto;
+                img {
+                    height: 300px;
+                    width: 450px;
+                    padding-top: 0;
+                }
+            }
+            .access-info-info {
+                margin-left: 20px;
+                margin-right: auto;
+                width: 30%;
+                text-align: left;
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+        .map {
+            img {
+                padding-top: 0;
+                margin: 60px auto;
+                width: 550px;
+                height: 450px;
+            }
+        }
+    }
+}
+
+footer {
+    .footer-top {
+        background-image: url("../tyukyu-Ex/bg3.png");
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        img {
+            padding: 16px;
+        }
+        h3 {
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+        .vartical {
+            writing-mode: vertical-rl;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px 20px 20px 20px;
+            p {
+                line-height: 50px;
+                letter-spacing: 10px;
+                color: black;
+            }
+        }
+        .address {
+            padding-bottom: 16px;
+            p {
+                font-size: 16px;
+                margin-bottom: 0;
+            }
+        }
+    }
+    .footer-bottom {
+        margin-bottom: 0;
+        vertical-align: auto;
+        background-color: black;
+        color: $white;
+        text-align: center;
+        padding: 16px;
+    }
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+    }
+    8% {
+        opacity: 1;
+    }
+    33% {
+        opacity: 1;
+    }
+    48% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+}

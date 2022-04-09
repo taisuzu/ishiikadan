@@ -1,0 +1,88 @@
+$white:#fff;
+$black:#000;
+$planWidth:18vw;
+$cardWidth:45%;
+$cardColor:#F6F6F6;
+* {
+    padding: 0;
+    margin: 0;
+    font-family: “Times New Roman”, “游明朝”, “Yu Mincho”, “游明朝体”, “YuMincho”, “ヒラギノ明朝 Pro W3”, “Hiragino Mincho Pro”, “HiraMinProN-W3”, “HGS明朝E”, “ＭＳ Ｐ明朝”, “MS PMincho”, serif;
+}
+
+header {
+    a {
+        color: $black;
+        text-decoration: none;
+    }
+    width: 100%;
+    color: $black;
+    background-color: $white;
+    opacity: 0.8;
+    display: flex;
+    z-index: 5;
+    position: fixed;
+    .logo {
+         :hover {
+            color: black;
+            text-decoration: none;
+        }
+        h1 {
+            font-size: 32px;
+            font-weight: bold;
+            padding-top: 3px;
+            cursor: pointer;
+        }
+        img {
+            padding-right: 5px;
+        }
+        display: flex;
+        align-items: flex-start;
+        font-size: 32px;
+        justify-content: center;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    .header-menu {
+        display: flex;
+        margin-left: 5vw;
+        margin-top: 20px;
+         :hover {
+            margin-top: 2px;
+            transition: 0.3s;
+            color: $black;
+        }
+        p {
+            margin-right: 1vw;
+            cursor: pointer;
+        }
+    }
+    .booking-btn {
+        color: $white;
+        border: none;
+        align-items: flex-start;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: 20px;
+         :hover {
+            background-color: #afa408;
+        }
+        span {
+            background-color: #978F10;
+            //ボタン
+            position: relative;
+            display: flex;
+            border: 1px solid;
+            cursor: pointer;
+            padding: 10px 20px;
+            opacity: 0.9;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            img {
+                padding-right: 5px;
+            }
+            p {
+                margin: 0 auto;
+            }
+        }
+    }
+}

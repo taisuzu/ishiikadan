@@ -1,0 +1,61 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  font-family: “Times New Roman”, “游明朝”, “Yu Mincho”, “游明朝体”, “YuMincho”, “ヒラギノ明朝 Pro W3”, “Hiragino Mincho Pro”, “HiraMinProN-W3”, “HGS明朝E”, “ＭＳ Ｐ明朝”, “MS PMincho”, serif;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer .footer-top {
+  background-image: url("../tyukyu-Ex/bg3.png");
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+footer .footer-top img {
+  padding: 16px;
+}
+
+footer .footer-top h3 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+footer .footer-top .vartical {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 20px 20px 20px;
+}
+
+footer .footer-top .vartical p {
+  line-height: 50px;
+  letter-spacing: 10px;
+  color: black;
+}
+
+footer .footer-top .address {
+  padding-bottom: 16px;
+}
+
+footer .footer-top .address p {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+footer .footer-bottom {
+  margin-bottom: 0;
+  vertical-align: auto;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 16px;
+}
+/*# sourceMappingURL=footer.css.map */

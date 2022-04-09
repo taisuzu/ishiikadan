@@ -1,0 +1,99 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  font-family: “Times New Roman”, “游明朝”, “Yu Mincho”, “游明朝体”, “YuMincho”, “ヒラギノ明朝 Pro W3”, “Hiragino Mincho Pro”, “HiraMinProN-W3”, “HGS明朝E”, “ＭＳ Ｐ明朝”, “MS PMincho”, serif;
+}
+
+main h6 {
+  font-size: 10px;
+  text-align: left;
+  margin-left: 200px;
+}
+
+main .main-pic {
+  position: relative;
+}
+
+main .main-pic .title {
+  z-index: 2;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 48%;
+  font-size: 24px;
+}
+
+main .main-pic img {
+  width: 100%;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main .main-wrapper {
+  width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main .main-wrapper .site-map {
+  margin-top: 20px;
+  margin-right: auto;
+}
+
+main .main-wrapper .comment {
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+main .main-wrapper .main-contents {
+  margin-top: 100px;
+}
+
+main .main-wrapper .main-contents div {
+  margin-top: 20px;
+  position: relative;
+  margin-bottom: 200px;
+}
+
+main .main-wrapper .main-contents img {
+  width: 400px;
+  height: 240px;
+  z-index: 3;
+}
+
+main .main-wrapper .main-contents img:nth-of-type(even) {
+  margin-left: auto;
+}
+
+main .main-wrapper .main-contents .explanation {
+  position: absolute;
+  width: 700px;
+  height: 300px;
+  background-image: url("../tyukyu-Ex/child-bg.png");
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: left;
+  top: 30px;
+  right: 0%;
+  z-index: -1;
+}
+
+main .main-wrapper .main-contents .explanation h3 {
+  margin-left: 200px;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+main .main-wrapper .main-contents .explanation p {
+  margin-left: 200px;
+  font-size: 12px;
+}
+
+main .main-wrapper .main-contents .explanation:nth-of-type(even) {
+  right: none;
+}
+/*# sourceMappingURL=child-main.css.map */
