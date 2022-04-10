@@ -1,1 +1,6 @@
-AOS.init()
+AOS.init({
+    offset: 100,
+    duration: 1500,
+    easing: 'easeOutCirc',
+
+});
