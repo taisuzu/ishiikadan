@@ -1,1 +1,0 @@
-AOS.init({ offset: 100, easing: 'ease', duration: 1500 });
