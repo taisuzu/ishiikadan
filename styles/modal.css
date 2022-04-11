@@ -22,7 +22,7 @@
 }
 
 .modal-overray .booking-modal img {
-  text-align: right;
+  padding-left: 100%;
   cursor: pointer;
 }
 
