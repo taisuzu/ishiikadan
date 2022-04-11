@@ -1,0 +1,61 @@
+.modal-overray {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: solid;
+    .booking-modal {
+        z-index: 11;
+        text-align: left;
+        margin: auto;
+        background-color: rgb(250, 250, 250);
+        opacity: revert;
+        padding: 40px;
+        width: 450px;
+        height: 500px;
+        img {
+            text-align: right;
+            cursor: pointer;
+        }
+        h3 {
+            text-align: center;
+            font-size: 22px;
+            margin-bottom: 30px;
+            border-bottom: black 0.8px solid;
+            padding-bottom: 20px;
+        }
+    }
+    .form-contents {
+        margin-bottom: 30px;
+        p {
+            font-size: 14px;
+            margin: 10px 0 10px 0;
+        }
+        input {
+            font-size: 14px;
+            width: 380px;
+            color: rgb(180, 180, 180);
+        }
+    }
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+button {
+    font-size: 16px;
+    position: relative;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid;
+    cursor: pointer;
+    padding: 5px 52px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #fff;
+}

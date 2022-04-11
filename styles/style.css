@@ -5,12 +5,12 @@
   font-family: “Times New Roman”, “游明朝”, “Yu Mincho”, “游明朝体”, “YuMincho”, “ヒラギノ明朝 Pro W3”, “Hiragino Mincho Pro”, “HiraMinProN-W3”, “HGS明朝E”, “ＭＳ Ｐ明朝”, “MS PMincho”, serif;
 }
 
-.body-modal a {
+a {
   color: #fff;
   text-decoration: none;
 }
 
-.body-modal header {
+header {
   width: 100%;
   color: #fff;
   background-color: black;
@@ -22,7 +22,7 @@
   position: fixed;
 }
 
-.body-modal header .logo {
+header .logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -37,22 +37,27 @@
   margin-left: 10px;
 }
 
-.body-modal header .logo h1 {
-  font-size: 32px;
-  font-weight: bold;
-  padding-top: 3px;
+header .logo a {
+  cursor: pointer;
+  color: white;
   cursor: pointer;
 }
 
-.body-modal header .logo h1 :hover {
-  color: #fff;
+header .logo a :hover {
+  color: white;
 }
 
-.body-modal header .logo img {
+header .logo a h1 {
+  font-size: 32px;
+  font-weight: bold;
+  padding-top: 3px;
+}
+
+header .logo img {
   padding-right: 5px;
 }
 
-.body-modal header .header-menu {
+header .header-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -60,19 +65,19 @@
   margin-top: 20px;
 }
 
-.body-modal header .header-menu :hover {
+header .header-menu :hover {
   margin-top: 2px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   color: #fff;
 }
 
-.body-modal header .header-menu p {
+header .header-menu p {
   margin-right: 1vw;
   cursor: pointer;
 }
 
-.body-modal header .booking-btn {
+header .booking-btn {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -83,11 +88,11 @@
   margin-right: 20px;
 }
 
-.body-modal header .booking-btn :hover {
+header .booking-btn :hover {
   background-color: #afa408;
 }
 
-.body-modal header .booking-btn span {
+header .booking-btn span {
   background-color: #978F10;
   position: relative;
   display: -webkit-box;
@@ -101,11 +106,11 @@
   margin-bottom: 10px;
 }
 
-.body-modal header .booking-btn span img {
+header .booking-btn span img {
   padding-right: 5px;
 }
 
-.body-modal header .booking-btn span p {
+header .booking-btn span p {
   margin: 0 auto;
 }
 
