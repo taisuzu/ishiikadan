@@ -204,12 +204,13 @@ main .about div {
   margin-bottom: 40px;
 }
 
-main .about div h3 {
-  font-size: 36px;
+main .about div h2 {
+  font-size: 30px;
 }
 
 main .about div p {
   font-size: 16px;
+  line-height: 30px;
 }
 
 main .about img {
@@ -263,8 +264,8 @@ main .about .meal {
   display: flex;
 }
 
-main .about .meal .meat-img {
-  margin-right: auto;
+main .about .meal .meal-img {
+  margin-left: auto;
 }
 
 main .about .meal .meal-comment {
@@ -625,6 +626,7 @@ footer .footer-bottom {
   padding: 16px;
 }
 
+/*---- animation -----*/
 @-webkit-keyframes slide {
   0% {
     opacity: 0;
@@ -644,7 +646,6 @@ footer .footer-bottom {
             transform: scale(1.2);
   }
 }
-
 @keyframes slide {
   0% {
     opacity: 0;
@@ -662,6 +663,178 @@ footer .footer-bottom {
     opacity: 0;
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
+  }
+}
+
+@media screen and (max-width: 980px) {
+  header .logo a h1 {
+    font-size: 28px;
+    padding-top: 3px;
+  }
+  header .logo img {
+    height: 30px;
+    width: 30px;
+  }
+  header .header-menu p {
+    display: none;
+  }
+  header .booking-btn span {
+    padding: 5px 10px;
+  }
+  main .comment-wrapper {
+    background-image: url("../tyukyu-Ex/bg.png");
+  }
+  main .comment-wrapper .comment {
+    width: 100vw;
+    -webkit-writing-mode: horizontal-tb;
+        -ms-writing-mode: lr-tb;
+            writing-mode: horizontal-tb;
+  }
+  main .comment-wrapper .comment h2 {
+    padding-left: 0;
+    font-size: 24px;
+    text-align: center;
+  }
+  main .comment-wrapper .comment p {
+    width: 90vw;
+    line-height: 40px;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    text-align: center;
+  }
+  main .comment-wrapper .comment h3 {
+    margin-left: auto;
+    padding-top: 20px;
+    font-size: 16px;
+    text-align: right;
+  }
+  main .about div {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  main .about div h2 {
+    font-size: 22px;
+    text-shadow: 3px 3px 2px #000;
+  }
+  main .about div p {
+    font-size: 14px;
+    text-shadow: 3px 3px 2px #000;
+  }
+  main .about .room {
+    background-image: url("../tyukyu-Ex/oheya-top.jpg");
+    background-size: cover;
+  }
+  main .about .room .room-img {
+    display: none;
+  }
+  main .about .room .room-comment {
+    color: #fff;
+  }
+  main .about .room .room-comment button {
+    padding: 10px 32px;
+  }
+  main .about .meal {
+    background-image: url("../tyukyu-Ex/menu-top.jpg");
+    background-size: cover;
+  }
+  main .about .meal .meal-img {
+    display: none;
+  }
+  main .about .meal .meal-comment {
+    color: #fff;
+  }
+  main .about .meal .meal-comment button {
+    padding: 10px 32px;
+  }
+  main .about .onsen {
+    background-image: url("../tyukyu-Ex/onsen-top.jpg");
+    background-size: cover;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main .about .onsen .onsen-img {
+    display: none;
+  }
+  main .about .onsen .onsen-comment {
+    color: #fff;
+  }
+  main .about .onsen .onsen-comment button {
+    padding: 10px 32px;
+  }
+  main .plan .plan-contents {
+    display: inline;
+    width: 100vw;
+  }
+  main .plan .plan-contents div {
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 40px;
+  }
+  main .news {
+    width: 100vw;
+  }
+  main .news p {
+    font-size: 12px;
+  }
+  main .news h6 {
+    font-size: 25px;
+  }
+  main .news .news-tag {
+    display: inline;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    text-align: left;
+  }
+  main .news .news-tag .news1 {
+    width: 95%;
+  }
+  main .news .news-tag .news2 {
+    width: 95%;
+  }
+  main .news .news-tag .news3 {
+    width: 95%;
+  }
+  main .news .news-tag .news4 {
+    width: 95%;
+  }
+  main .news .news-tag .news5 {
+    width: 95%;
+  }
+  main .news .news-tag .news6 {
+    width: 95%;
+  }
+  main .access .access-info {
+    width: 100%;
+    display: inline;
+  }
+  main .access .access-info .access-info-pic {
+    width: 100%;
+  }
+  main .access .access-info .access-info-pic img {
+    margin-left: auto;
+    margin-right: auto;
+    height: 60vw;
+    width: 90vw;
+  }
+  main .access .access-info .access-info-info {
+    padding-top: 40px;
+    font-size: 14px;
+    width: 90vw;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  main .access .access-info .access-info-info a {
+    color: #000;
+    text-decoration: none;
+  }
+  main .access .map img {
+    padding-top: 0;
+    margin: 60px auto;
+    width: 90vw;
+    height: 60vw;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -69,4 +69,17 @@ button {
   text-align: center;
   background-color: #fff;
 }
+
+@media screen and (max-width: 767px) {
+  #css {
+    width: auto;
+  }
+  .modal-overray .booking-modal {
+    width: 300px;
+    height: 500px;
+  }
+  .modal-overray .booking-modal .form-contents input {
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=modal.css.map */
