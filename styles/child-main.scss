@@ -83,3 +83,64 @@ main {
         }
     }
 }
+
+@media screen and (max-width:980px) {
+    main {
+        h6 {
+            font-size: 10px;
+            text-align: left;
+            margin-left: 200px;
+        }
+        .main-wrapper {
+            width: 95vw;
+            .site-map {
+                margin-top: 20px;
+                margin-right: auto;
+            }
+            .comment {
+                p {
+                    font-size: 14px;
+                }
+            }
+            .main-contents {
+                div {
+                    position: static;
+                    margin-bottom: 20px;
+                }
+                img {
+                    width: 95vw;
+                    height: 60vw;
+                    z-index: 3;
+                }
+                img:nth-of-type(even) {
+                    margin-left: auto;
+                }
+                .explanation {
+                    text-align: center;
+                    margin-top: 0;
+                    position: static;
+                    width: 95vw;
+                    margin-bottom: none;
+                    h3 {
+                        margin-left: auto;
+                        margin-right: auto;
+                        font-size: 20px;
+                        margin-bottom: 40px;
+                    }
+                    p {
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                    h6 {
+                        text-align: center;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }
+                .explanation:nth-of-type(even) {
+                    right: none;
+                }
+            }
+        }
+    }
+}

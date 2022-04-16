@@ -681,6 +681,10 @@ footer .footer-bottom {
   header .booking-btn span {
     padding: 5px 10px;
   }
+  main #main-img .main-text h2 {
+    margin-top: 30vh;
+    margin-left: 50vw;
+  }
   main .comment-wrapper {
     background-image: url("../tyukyu-Ex/bg.png");
   }

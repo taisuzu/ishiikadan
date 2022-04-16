@@ -96,4 +96,59 @@ main .main-wrapper .main-contents .explanation p {
 main .main-wrapper .main-contents .explanation:nth-of-type(even) {
   right: none;
 }
+
+@media screen and (max-width: 980px) {
+  main h6 {
+    font-size: 10px;
+    text-align: left;
+    margin-left: 200px;
+  }
+  main .main-wrapper {
+    width: 95vw;
+  }
+  main .main-wrapper .site-map {
+    margin-top: 20px;
+    margin-right: auto;
+  }
+  main .main-wrapper .comment p {
+    font-size: 14px;
+  }
+  main .main-wrapper .main-contents div {
+    position: static;
+    margin-bottom: 20px;
+  }
+  main .main-wrapper .main-contents img {
+    width: 95vw;
+    height: 60vw;
+    z-index: 3;
+  }
+  main .main-wrapper .main-contents img:nth-of-type(even) {
+    margin-left: auto;
+  }
+  main .main-wrapper .main-contents .explanation {
+    text-align: center;
+    margin-top: 0;
+    position: static;
+    width: 95vw;
+    margin-bottom: none;
+  }
+  main .main-wrapper .main-contents .explanation h3 {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  main .main-wrapper .main-contents .explanation p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  main .main-wrapper .main-contents .explanation h6 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  main .main-wrapper .main-contents .explanation:nth-of-type(even) {
+    right: none;
+  }
+}
 /*# sourceMappingURL=child-main.css.map */

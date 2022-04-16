@@ -111,4 +111,21 @@ header .booking-btn span img {
 header .booking-btn span p {
   margin: 0 auto;
 }
+
+@media screen and (max-width: 980px) {
+  header .logo a h1 {
+    font-size: 28px;
+    padding-top: 3px;
+  }
+  header .logo img {
+    height: 30px;
+    width: 30px;
+  }
+  header .header-menu p {
+    display: none;
+  }
+  header .booking-btn span {
+    padding: 5px 10px;
+  }
+}
 /*# sourceMappingURL=header.css.map */

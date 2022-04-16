@@ -552,6 +552,15 @@ footer {
     }
     //コメント
     main {
+        //メイン画像
+        #main-img {
+            .main-text {
+                h2 {
+                    margin-top: 30vh;
+                    margin-left: 50vw;
+                }
+            }
+        }
         .comment-wrapper {
             background-image: url("../tyukyu-Ex/bg.png");
             .comment {

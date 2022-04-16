@@ -86,3 +86,30 @@ header {
         }
     }
 }
+
+@media screen and (max-width:980px) {
+    header {
+        .logo {
+            a {
+                h1 {
+                    font-size: 28px;
+                    padding-top: 3px;
+                }
+            }
+            img {
+                height: 30px;
+                width: 30px;
+            }
+        }
+        .header-menu {
+            p {
+                display: none;
+            }
+        }
+        .booking-btn {
+            span {
+                padding: 5px 10px;
+            }
+        }
+    }
+}
